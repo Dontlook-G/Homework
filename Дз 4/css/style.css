@@ -1,0 +1,24 @@
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.uper {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wave {
+    text-decoration: wavy overline;
+    text-shadow: 1px 1px 1px #c903c2;
+    word-spacing: 30px
+}
+.dline {
+text-decoration: double underline;
+letter-spacing: 5px
+}
