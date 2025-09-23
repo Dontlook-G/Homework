@@ -1,0 +1,12 @@
+.header {
+    background-color: #ffa500;
+    height: 60px;
+}
+.block {
+    background-color: #daac56;
+}
+.footer {
+    color: white;
+    background-color: #e90de9;
+    height: 300px;
+}
