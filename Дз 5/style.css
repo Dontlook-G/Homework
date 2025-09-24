@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #6666daa0;
+    max-height: 500px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    overflow: auto;
+}
+
+.inside {
+    background-color: #d69b43;
+    display: inline-block;
+    max-width: 250px;
+    max-height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 40px;
+    box-shadow: inset 0px -1px 10px 1px;
+}
