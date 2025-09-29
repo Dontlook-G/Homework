@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(13, 13, 13);
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    margin: 20% auto;
+    background-color: rgb(33, 32, 32);
+    position: relative;
+    border-radius: 10px;
+}
+
+.block::before {
+    content: 'успех';
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease 1s;
+}
+
+.block:hover::before {
+    color: #37ff00;
+}
+
+.block::after {
+    content: '';
+    width: 0;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: -30%;
+    left: -100%;
+    transition: width 0.9s linear;
+}
+
+.block:hover::after {
+    width: 300px;
+}
