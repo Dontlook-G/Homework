@@ -1,5 +1,7 @@
 (function () {
 
+
+
     document.addEventListener('click', burgerInit)
 
     function burgerInit(e) {
@@ -17,6 +19,8 @@
         }
 
     }
+
+
 
     const modal = document.querySelector('.modal')
     const modalButton = document.querySelector('.about__img-button')
@@ -39,6 +43,7 @@
         }
 
     }
+
 
     const tabControls = document.querySelector('.tab-conrols')
 
@@ -69,6 +74,7 @@
 
     }
 
+
     const accordionLists = document.querySelectorAll('.accordion-list');
 
     accordionLists.forEach(el => {
@@ -98,6 +104,35 @@
 
         });
 
+    });
+
+
+    const swiper = new Swiper('.gallery__slider', {
+
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction',
+        },
+
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+
+        breakpoints: {
+            601: {
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 32,
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
     });
 
 })()
