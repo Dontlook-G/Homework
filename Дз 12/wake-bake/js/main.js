@@ -1,7 +1,6 @@
 (function () {
 
 
-
     document.addEventListener('click', burgerInit)
 
     function burgerInit(e) {
@@ -19,7 +18,6 @@
         }
 
     }
-
 
 
     const modal = document.querySelector('.modal')
@@ -43,6 +41,7 @@
         }
 
     }
+
 
 
     const tabControls = document.querySelector('.tab-conrols')
@@ -107,6 +106,7 @@
     });
 
 
+
     new Swiper('.gallery__slider', {
 
         spaceBetween: 15,
@@ -135,38 +135,37 @@
         }
     });
 
+
+
     new Swiper('.testimonials__slider', {
 
         spaceBetween: 0,
         slidesPerView: 1,
         centeredSlides: true,
 
-
-
         navigation: {
             nextEl: '.testimonials__next',
             prevEl: '.testimonials__prev',
         },
-
-
 
         scrollbar: {
             el: '.swiper-scrollbar',
             draggable: true,
         },
 
-                breakpoints: {
+        breakpoints: {
             901: {
                 slidesPerView: 1.5,
             },
             1201: {
-                slidesPerView: 2,
-            },
+                slidesPerView: 2.1,
+            }
         }
     });
 
 
-
-
+    const telInputs = document.querySelectorAll('input[type="tel"]')
+    const im = new Inputmask('+7 (999) 999-99-99')
+    im.mask(telInputs)
 
 })()
