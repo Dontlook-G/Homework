@@ -1,0 +1,47 @@
+:root {
+    --transition: all .4s;
+    --shadow: #00000080;
+    --black: #000000;
+}
+
+
+
+
+.body {
+    font-family: 'Monument Extended', sans-serif;
+    color: var(--black);
+    background: #fff;
+    overflow-x: hidden;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+
+.button {
+    font-size: 20px;
+    line-height: 256%;
+    letter-spacing: 0.08em;
+    color: #fff;
+    border: 1.56px solid #fff;
+    padding: 6px 24px;
+    background: transparent;
+    transition: var(--transition);
+}
