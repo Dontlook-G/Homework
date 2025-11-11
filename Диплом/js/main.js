@@ -79,13 +79,13 @@
     const listBtn = document.getElementById('listView');
     const container = document.querySelector('.catalog__bottom');
 
-    // режим "Сетка"
+
     gridBtn.addEventListener('click', () => {
         container.classList.remove('list-view');
         container.classList.add('grid-view');
     });
 
-    // режим "Список"
+
     listBtn.addEventListener('click', () => {
         container.classList.remove('grid-view');
         container.classList.add('list-view');
@@ -96,13 +96,13 @@
     const listBtnSec = document.getElementById('listView');
     const containeSec = document.querySelector('.secondary');
 
-    // режим "Сетка"
+
     gridBtnSec.addEventListener('click', () => {
         containeSec.classList.remove('list-view');
         containeSec.classList.add('grid-view');
     });
 
-    // режим "Список"
+
     listBtnSec.addEventListener('click', () => {
         containeSec.classList.remove('grid-view');
         containeSec.classList.add('list-view');
@@ -137,14 +137,14 @@
     const btn = document.getElementById('dropdownBtn');
     const menu = document.getElementById('dropdownMenu');
 
-    // Переключаем видимость списка при нажатии на кнопку
+
     btn.addEventListener('click', () => {
         menu.classList.toggle('catalog-filter__options--show');
     });
 
 
 
-    // Закрываем меню при клике на пункт списка
+
     const items = menu.querySelectorAll('a');
     items.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -158,7 +158,7 @@
     const btnSort = document.getElementById('dropdownBtnSort');
     const menuSort = document.getElementById('dropdownMenuSort');
 
-    // Переключаем видимость списка при нажатии на кнопку
+
     btnSort.addEventListener('click', () => {
         menuSort.classList.toggle('catalog-sort__options--show');
     });
@@ -179,7 +179,7 @@
     if (mixContainer && typeof mixitup !== 'undefined') {
         const mixer = mixitup(mixContainer, {
             selectors: {
-                target: '.catalog__product' // ✅ карточка товара
+                target: '.catalog__product'
             },
             animation: {
                 duration: 400,
@@ -189,7 +189,6 @@
 
         console.log('✅ MixItUp инициализирован:', mixer);
 
-        // ✅ Привяжем фильтрацию к ссылкам из выпадающего меню
         items.forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
